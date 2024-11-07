@@ -63,7 +63,7 @@ const movieDelete = async (req, res) => {
 
   try {
     await Movie.deleteOne({ _id: movieId });
-    res.json({ message: "Movie Deleted" });
+    res.json({ message: "Movie Deleted!test" });
   } catch (error) {
     if (error) throw error;
   }
